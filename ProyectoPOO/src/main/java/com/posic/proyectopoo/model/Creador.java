@@ -1,4 +1,4 @@
-package com.poo.model;
+package com.posic.proyectopoo.model;
 
 public class Creador extends PersonaAbstracta {
         private String CodigoCreador;

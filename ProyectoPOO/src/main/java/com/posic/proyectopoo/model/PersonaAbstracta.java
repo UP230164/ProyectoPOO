@@ -1,4 +1,4 @@
-package com.poo.model;
+package com.posic.proyectopoo.model;
 
 public class PersonaAbstracta {
     private String nombre;

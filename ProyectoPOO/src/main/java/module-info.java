@@ -7,5 +7,7 @@ module com.posic.proyectopoo {
     requires org.kordamp.bootstrapfx.core;
 
     opens com.posic.proyectopoo to javafx.fxml;
+    opens com.posic.proyectopoo.model to javafx.base;
     exports com.posic.proyectopoo;
+
 }

@@ -1,20 +1,23 @@
-package com.poo.model;
+package com.posic.proyectopoo.model;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Inventario {
-    private List<Robot> ArrayRobots;
+    private ObservableList<Robot> ArrayRobots;
 
-    Inventario(){
-        this.ArrayRobots = new ArrayList<>();
+    public Inventario(){
+        this.ArrayRobots = FXCollections.observableArrayList();
     }
 
-    public List<Robot> getArrayRobots() {
+    public ObservableList<Robot> getArrayRobots() {
         return ArrayRobots;
     }
 
-    public void setArrayRobots(List<Robot> arrayRobots) {
+    public void setArrayRobots(ObservableList<Robot> arrayRobots) {
         ArrayRobots = arrayRobots;
     }
 

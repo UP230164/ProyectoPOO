@@ -1,7 +1,10 @@
 package com.posic.proyectopoo;
 
+import com.posic.proyectopoo.model.Inventario;
+import com.posic.proyectopoo.model.Robot;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -11,7 +14,7 @@ public class ControladorPrincipal {
     private static Stage princiStage;
     private static Scene princiScene;
 
-    public Stage getStage() {
+    public static Stage getStage() {
         return princiStage;
     }
 
@@ -39,13 +42,6 @@ public class ControladorPrincipal {
         Stage stage = getStage();
         stage.setScene(CRUDVentas.escenaVentasCRUD());
         stage.setTitle("Ventas CRUD");
-        stage.show();
-    }
-    @FXML
-    protected void MenuPrincipal() throws IOException {
-        Stage stage = getStage();
-        stage.setScene(getPrinciScene());
-        stage.setTitle("Menú Principal");
         stage.show();
     }
 

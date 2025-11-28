@@ -1,4 +1,4 @@
-package com.poo.model;
+package com.posic.proyectopoo.model;
 
 public class Robot {
     private String NoSerial;
@@ -8,9 +8,9 @@ public class Robot {
     private String TipoJuego;
     private String TipoAtaque;
     private String Modelo;
-    private int Precio;
+    private double Precio;
 
-    Robot(String NoSerial, String Nombre, String Marca, String CodigoCreador, String TipoJuego, String TipoAtaque, String Modelo, int Precio){
+    public Robot(String NoSerial, String Nombre, String Marca, String CodigoCreador, String TipoJuego, String TipoAtaque, String Modelo, double Precio){
         this.NoSerial = NoSerial;
         this.Nombre = Nombre;
         this.Marca = Marca;
@@ -77,7 +77,7 @@ public class Robot {
         Modelo = modelo;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return Precio;
     }
 
